@@ -4,8 +4,8 @@ import Home from './assets/layout/home/index'
 //import css
 import './App.css';
 //import help
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {Link} from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 
 
 // MAIN
@@ -16,9 +16,10 @@ function App() {
         <Routes>
             <Route path="/home" element={<Home/>}/> 
         </Routes>
+
+        <li><Link to="/home">Home</Link></li>
     </BrowserRouter>
 
-    <li><Link to="/">Home</Link></li>
     
     </div>
   );
