@@ -1,6 +1,11 @@
+//import css
+import Styles from './index.module.css';
+
 function home(){
     return (
-        <p>Guilherme</p>
+        <div className={Styles.home}>
+            a
+        </div>
     )
 }
 
