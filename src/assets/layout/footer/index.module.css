@@ -7,6 +7,10 @@
     background-color: #001233;
 }
 
+h3{
+    color: white;
+}
+
 .footer{
     display: flex;
     justify-content: space-evenly;
