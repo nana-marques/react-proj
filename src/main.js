@@ -2,7 +2,7 @@
 import NavBar from './assets/layout/navBar/index'
 import Home from './assets/layout/home/index'
 import Footer from './assets/layout/footer/index'
-//import css
+import Login from './assets/layout/login/index';
 import './App.css';
 //import help
 
@@ -13,6 +13,7 @@ function App() {
     <NavBar/>
     <Home/>
     <Footer/>
+    <Login />
     </div>
   );
 }
