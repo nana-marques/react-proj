@@ -12,8 +12,8 @@ function App() {
     <div className="main">
     <NavBar/>
     <Home/>
-    <Footer/>
     <Login />
+    <Footer/>
     </div>
   );
 }
