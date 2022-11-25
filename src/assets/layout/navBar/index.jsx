@@ -22,7 +22,7 @@ function navBar(){
 
                 <ul className={Styles.navLink}>
                     <li><Link to="/home" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Home</Link></li>
-                    <li><Link to="/search" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Login</Link></li>
+                    <li><Link to={{pathname: "/login"}} style={{ textDecoration: 'none' }}  className={Styles.navItem}>Login</Link></li>
                     <li><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Carrinho</Link></li>
                 </ul>
             </nav>
