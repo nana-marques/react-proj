@@ -36,12 +36,12 @@ function navBar(){
 
                 <SearchBar />
 
-                <ul className={Styles.navLink}>
-                    <li><Link to="/home" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Home</Link></li>
-                    <li><Link to={{pathname: "/login"}} style={{ textDecoration: 'none' }}  className={Styles.navItem}>Login</Link></li>
-                    <li><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Carrinho</Link></li>
-                </ul>
-            </nav>
+                <div className={Styles.navLink}>
+                    <span><Link to="/home" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Home</Link></span>
+                    <span><Link to="/search" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Login</Link></span>
+                    <span><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}><FaShoppingCart className={Styles.navCart}/></Link></span>
+                </div>
+            </div>
         </Router>
     )
 }

@@ -10,11 +10,14 @@
     top: 0;
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .navLink{
     display: flex;
+    flex-flow: row;
     float: right;
+    text-decoration: none;
 }
 
 .navLink > span {
