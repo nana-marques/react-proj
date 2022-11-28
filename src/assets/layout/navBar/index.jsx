@@ -23,6 +23,7 @@ import SearchBar from '../search/searchBar';
 
 //login
 import Login from '../login'
+import { Register } from '../login/Register';
 
 function navBar(){
     const styleCart = {paddingRight: "50px"}
@@ -49,6 +50,7 @@ function navBar(){
             <Routes>
                 <Route path="/login" element={<Login />} />
                 {/* <Route path="/carrinho" element={<Carrinho />} /> */}
+                <Route path="/register" element={<Register />} />
             </Routes>
         </Router>
     )
