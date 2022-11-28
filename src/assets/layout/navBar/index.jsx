@@ -1,6 +1,7 @@
 
 //import css
 import Styles from './index.module.css'
+
 //import help
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -21,6 +22,9 @@ import Logo from '../../img/logo.png'
 //import search
 import SearchBar from '../search/searchBar';
 
+//login
+import Login from '../login'
+
 function navBar(){
     return (
         <Router>
@@ -38,10 +42,14 @@ function navBar(){
 
                 <div className={Styles.navLink}>
                     <span><Link to="/home" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Home</Link></span>
-                    <span><Link to="/search" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Login</Link></span>
+                    <span><Link to="/login" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Login</Link></span>
                     <span><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}><FaShoppingCart className={Styles.navCart}/></Link></span>
                 </div>
             </div>
+            <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route path="/carrinho" element={<Login />} />
+            </Routes>
         </Router>
     )
 }
