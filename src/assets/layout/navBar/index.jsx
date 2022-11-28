@@ -6,15 +6,14 @@ import Styles from './index.module.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 //import icons
-import { FaSearch } from 'react-icons/fa';
 import { FaShoppingCart } from 'react-icons/fa';
 
 //import react
-import { Button } from 'reactstrap';
-import { Input } from 'reactstrap';
-import { InputGroup } from 'reactstrap';
-import { Col } from 'reactstrap';
-import { Navbar } from 'reactstrap';
+// import { Button } from 'reactstrap';
+// import { Input } from 'reactstrap';
+// import { InputGroup } from 'reactstrap';
+// import { Col } from 'reactstrap';
+// import { Navbar } from 'reactstrap';
 
 //import logo
 import Logo from '../../img/logo.png'
@@ -26,6 +25,7 @@ import SearchBar from '../search/searchBar';
 import Login from '../login'
 
 function navBar(){
+    const styleCart = {paddingRight: "50px"}
     return (
         <Router>
             <div className={Styles.navBar}>
@@ -41,14 +41,14 @@ function navBar(){
                 <SearchBar />
 
                 <div className={Styles.navLink}>
-                    <span><Link to="/home" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Home</Link></span>
+                    <span><Link to="/" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Home</Link></span>
                     <span><Link to="/login" style={{ textDecoration: 'none' }}  className={Styles.navItem}>Login</Link></span>
-                    <span><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}><FaShoppingCart className={Styles.navCart}/></Link></span>
+                    <span><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}><FaShoppingCart size="23" values={{paddingRight: '50px', width: '50px', marginTop: '4px'}} alt="Carrinho"/></Link></span>
                 </div>
             </div>
             <Routes>
                 <Route path="/login" element={<Login />} />
-                <Route path="/carrinho" element={<Login />} />
+                {/* <Route path="/carrinho" element={<Carrinho />} /> */}
             </Routes>
         </Router>
     )
