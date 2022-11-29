@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito, sans-serif;
+}
+
+.cartContainer{
+    background-color: #023E7D;
+    vertical-align: middle;
+    width: 80%;
+    height: 650px;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    color: #F8F9FA;
+}
+
+.cartTitle{
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.cartDisplay{
+    width: 60%;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.cartButton{
+    position: relative;
+    margin-left: 40%;
+    padding: 15px;
+    width: 20%;
+    background-color: #002855;
+    color: #F8F9FA;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 400;
+    cursor: pointer;
+}
+
+.cartButton:hover{
+    background-color: #001233;
+    color: #eeeeee;
+}

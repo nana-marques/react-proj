@@ -3,6 +3,8 @@ import React from 'react';
 import Styles from './index.module.css';
 import { FaSearch } from 'react-icons/fa';
 
+import DropdownTreeSelect from './categorias';
+
 const SearchBar = ({keyword,setKeyword}) => {
 
   // const BarStyling = {
@@ -17,6 +19,15 @@ const SearchBar = ({keyword,setKeyword}) => {
   return (
     <>
       <div className={Styles.searchInput}>
+        <select name="categoria" id="categoria" className={Styles.searchDropdown}>
+          {DropdownTreeSelect.map((menu, index) => {
+            return (
+              <option className="menu-items" key={index}>{menu.value}
+                {/* <a href={menu.label}>{menu.value}  </a> */}
+              </option>
+            );
+          })}
+        </select>
         <input
         style={Styles.input}
         key="random1"
@@ -24,7 +35,8 @@ const SearchBar = ({keyword,setKeyword}) => {
         placeholder={"Pesquisar"}
         onChange={(e) => setKeyword(e.target.value)} />
         <button type="button" className={Styles.button} aria-label="Search"><FaSearch className={Styles.navSearchButton} /></button>
-      </div></>
+      </div>
+    </>
   );
 }
 
