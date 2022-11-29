@@ -9,10 +9,7 @@ export const Login = () => {
     const [password, setPassword] = useState("");
     return (
         <form className="login-form">
-          <div className="msg">
-            <span className="login-form-title-ss"> Bem vindo </span>
-          </div>
-
+      
           <span className="login-form-title">
             <img src={logoFull} alt="Radtek" />
           </span>

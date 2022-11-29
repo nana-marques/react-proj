@@ -169,9 +169,6 @@ body, html {
   cursor: pointer;
 }
 
-.text-center {
-  margin-top: 50px;
-}
 
 .txt1 {
   font-size: 14px;
@@ -185,9 +182,5 @@ body, html {
   color: #6a7dfe;
   line-height: 1.5;
   text-decoration: none;
-}
-
-.msg{
-  width: auto;
 }
 
