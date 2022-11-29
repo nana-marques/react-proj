@@ -55,6 +55,7 @@ function footer(){
                 <span><FaInstagram/></span>
                 <span><FaTwitter/></span>
         </div>
+        <br/>
     </div>
         
     )

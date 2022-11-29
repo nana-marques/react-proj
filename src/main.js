@@ -12,7 +12,7 @@ function App() {
     <div className="main">
     <NavBar/>
     <Home/>
-    <Login />
+    {/* <Login /> */}
     <Footer/>
     </div>
   );
