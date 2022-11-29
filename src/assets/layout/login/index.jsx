@@ -9,42 +9,44 @@ export const Login = () => {
     const [password, setPassword] = useState("");
     return (
         <form className="login-form">
-        <span className="login-form-title-ss"> Bem vindo </span>
+          <div className="msg">
+            <span className="login-form-title-ss"> Bem vindo </span>
+          </div>
 
-        <span className="login-form-title">
-          <img src={logoFull} alt="Radtek" />
-        </span>
+          <span className="login-form-title">
+            <img src={logoFull} alt="Radtek" />
+          </span>
 
-        <div className="wrap-input">
-          <input
-            className={email !== "" ? "has-val input" : "input"}
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <span className="focus-input" data-placeholder="Email"></span>
-        </div>
+          <div className="wrap-input">
+            <input
+              className={email !== "" ? "has-val input" : "input"}
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <span className="focus-input" data-placeholder="Email"></span>
+          </div>
 
-        <div className="wrap-input">
-          <input
-            className={password !== "" ? "has-val input" : "input"}
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <span className="focus-input" data-placeholder="Senha"></span>
-        </div>
+          <div className="wrap-input">
+            <input
+              className={password !== "" ? "has-val input" : "input"}
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <span className="focus-input" data-placeholder="Senha"></span>
+          </div>
 
-        <div className="container-login-form-btn">
-          <button className="login-form-btn">Login</button>
-        </div>
+          <div className="container-login-form-btn">
+            <button className="login-form-btn">Login</button>
+          </div>
 
-        <div className="text-center">
-          <span className="txt1">Não possui conta? </span>
-          <Link className="txt2" to="/register">
-            Criar conta.
-          </Link>
-        </div>
+          <div className="text-center">
+            <span className="txt1">Não possui conta? </span>
+            <Link className="txt2" to="/register">
+              Criar conta.
+            </Link>
+          </div>
         </form>
     )
 }
