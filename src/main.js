@@ -2,8 +2,8 @@
 import NavBar from './assets/layout/navBar/index'
 import Home from './assets/layout/home/index'
 import Footer from './assets/layout/footer/index'
-import Login from './assets/layout/login/index';
 import './App.css';
+// import { Login } from '../src/assets/layout/login/index';
 //import help
 
 // MAIN
@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="main">
     <NavBar/>
-    <Home/>
     {/* <Login /> */}
+    <Home/>
     <Footer/>
     </div>
   );

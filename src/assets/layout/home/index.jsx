@@ -4,7 +4,8 @@ import Styles from './index.module.css';
 function home(){
     return (
         <div className={Styles.home}>
-            a
+            as
+            {/* jkbkbkb */}
         </div>
     )
 }

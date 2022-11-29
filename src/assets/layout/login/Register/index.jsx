@@ -1,19 +1,32 @@
-//import css
-import logoFull from "../../img/logoTransparente.png"
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./styles.css";
+import { useState } from "react";
+import logoFull from "../../../img/logoTransparente.png";
+import './styles.css';
 
-export const Login = () => {
+
+
+export const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    return (
+    const [name, setName] = useState("")
+
+  return (
         <form className="login-form">
-        <span className="login-form-title-ss"> Bem vindo </span>
+        <span className="login-form-title-register"> Criar Conta </span>
 
         <span className="login-form-title">
           <img src={logoFull} alt="Radtek" />
         </span>
+
+        <div className="wrap-input">
+          <input
+            className={name !== "" ? "has-val input" : "input"}
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <span className="focus-input" data-placeholder="Nome"></span>
+        </div>
 
         <div className="wrap-input">
           <input
@@ -32,7 +45,7 @@ export const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <span className="focus-input" data-placeholder="Senha"></span>
+          <span className="focus-input" data-placeholder="Password"></span>
         </div>
 
         <div className="container-login-form-btn">
@@ -40,13 +53,11 @@ export const Login = () => {
         </div>
 
         <div className="text-center">
-          <span className="txt1">Não possui conta? </span>
-          <Link className="txt2" to="/register">
-            Criar conta.
+          <span className="txt1">Já possui conta? </span>
+          <Link className="txt2" to="/login">
+            Acessar com Email e Senha.
           </Link>
         </div>
-        </form>
-    )
+      </form>
+  )
 }
- 
-export default Login
