@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="main">
     <NavBar/>
-    {/* <Login /> */}
     <Home/>
     <Footer/>
     </div>
