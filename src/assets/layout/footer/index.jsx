@@ -1,5 +1,6 @@
 //import css
 import Styles from './index.module.css';
+//import helper
 import { Link } from 'react-router-dom';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
