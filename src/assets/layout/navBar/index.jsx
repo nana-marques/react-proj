@@ -22,10 +22,14 @@ import Logo from '../../img/logo.png'
 import SearchBar from '../search/searchBar';
 import fullSearch from '../search';
 
-//import components
+import { Badge } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
+
+//login
 import Login from '../login'
+
+//carrinho
 import Cart from '../carrinho';
-import Home from '../home';
 
 function navBar(){
     const styleCart = {paddingRight: "50px"}
@@ -44,15 +48,21 @@ function navBar(){
                 <SearchBar />
 
                 <div className={Styles.navLink}>
-                    <span><Link to="/" style={{textDecoration: 'none'}}  className={Styles.navItem}>Home</Link></span>
+                    <span><Link to="" style={{textDecoration: 'none'}}  className={Styles.navItem}>Home</Link></span>
                     <span><Link to="/login" style={{textDecoration: 'none'}}  className={Styles.navItem}>Login</Link></span>
-                    <span><Link to="/carrinho" style={{textDecoration: 'none'}}  className={Styles.navItem}><FaShoppingCart size="23" values={{paddingRight: '50px', width: '50px', marginTop: '5px'}} alt="Carrinho"/></Link></span>
+                    <span><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}>
+                            <IconButton size="small" aria-label="show 4 new mails" color="inherit">
+                                <Badge badgeContent={20} color="error">
+                                    <FaShoppingCart size="23" values={{paddingRight: '50px', width: '50px', marginTop: '5px'}} alt="Carrinho"/>
+                                </Badge>
+                            </IconButton>
+                        </Link>
+                    </span>
                 </div>
             </div>
             <Routes>
                 <Route path="/login" element={<Login/>} />
                 <Route path="/carrinho" element={<Cart/>} />
-                <Route path="/" element={<Home/>} />
             </Routes>
         </Router>
     )
