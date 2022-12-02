@@ -1,11 +1,12 @@
 //import css
-import Styles from './index.module.css';
+
+//import component
+import Carrosel from '../carrosel/index2'
 
 function home(){
     return (
-        <div className={Styles.home}>
-            as
-            {/* jkbkbkb */}
+        <div>
+           <Carrosel/>
         </div>
     )
 }
