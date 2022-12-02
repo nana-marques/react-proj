@@ -1,7 +1,5 @@
 //import css
 import "./styles.css"
-//import imgs
-import Imagem1 from '../../img/mouse.jpg'
 //import icons
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
@@ -11,17 +9,24 @@ import { useEffect, useState, useRef } from "react";
 
 function Carrossel(){
 
+    // setTimeout(() => {handleRightClick()}, 1000); 84
+
+    function slideCarrosel(){
+        setTimeout(handleRightClick,12000) 
+    }    
+
     const carousel =useRef (null)
 
     const handleLeftClick = (e) => {
-        e.preventDefault();
         carousel.current.scrollLeft -= carousel.current.offsetWidth;
     }
 
     const handleRightClick = (e) => {
-        e.preventDefault();
         carousel.current.scrollLeft += carousel.current.offsetWidth;
+        slideCarrosel();
     }
+
+    slideCarrosel();
 
     const [data,setData] = useState([]);
 
@@ -31,9 +36,11 @@ function Carrossel(){
     },[])
 
     if(!data || !data.length) return null;
-
+    
+    console.log(carousel.current)
 
     return(
+            
             <div className="mainContainer">
                 <div className="carousel" ref={carousel}>
 
@@ -58,6 +65,7 @@ function Carrossel(){
                     <button onClick={handleRightClick}><FaAngleRight/></button>
                 </div>
             </div>
+            
     )
 }
 export default Carrossel
