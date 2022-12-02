@@ -25,11 +25,10 @@ import fullSearch from '../search';
 import { Badge } from '@material-ui/core';
 import { IconButton } from '@material-ui/core';
 
-//login
+//import help
 import Login from '../login'
-
-//carrinho
 import Cart from '../carrinho';
+import Home from '../home'
 
 function navBar(){
     const styleCart = {paddingRight: "50px"}
@@ -63,6 +62,7 @@ function navBar(){
             <Routes>
                 <Route path="/login" element={<Login/>} />
                 <Route path="/carrinho" element={<Cart/>} />
+                <Route path="/" element={<Home/>} />
             </Routes>
         </Router>
     )
