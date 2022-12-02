@@ -8,15 +8,19 @@ import React from 'react';
 import { Carousel } from 'antd';
 //const CSS
 const contentStyle = {
-  height: '160px',
+  height: '400px',
   color: '#fff',
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79',
 };
 const mainContainer = {
-    width:'75%',
-    margin: '0 auto',
+    width:'90%',
+    margin:'0 auto',
+}
+const img={
+    width:'100%',
+    height:'100%'
 }
 
 const App = () => (
@@ -26,7 +30,7 @@ const App = () => (
             <h3 style={contentStyle}><img src={Img1} alt="Imagem1" /></h3>
         </div>
         <div>
-            <h3 style={contentStyle}><img src={Img2} alt="Imagem1" /></h3>
+            <h3 style={contentStyle}>< img src={Img2} style={img} alt="Imagem1" /></h3>
         </div>
         <div>
             <h3 style={contentStyle}><img src={Img3} alt="Imagem1" /></h3>
