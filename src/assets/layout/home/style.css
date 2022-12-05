@@ -81,3 +81,13 @@
         font-size: 32px;
     }
 }
+
+.oldPrice{
+    width: 100%;
+    background-color: black;
+}
+
+.rowCarousel{
+    width: 80%;
+    margin: 0 auto;
+}

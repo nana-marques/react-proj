@@ -2,6 +2,7 @@
 import './style.css'
 //import component
 import Carrosel from '../carrosel/index2'
+import Carrosel2 from '../carrosel/index3'
 //import imgs
 import Item1 from '../../img/xbox.jpg'
 import Item2 from '../../img/xboxX.jpg'
@@ -40,7 +41,7 @@ function home(){
                 <div className='card'>
                 <h2>Playstation 5</h2>
                     <img src={Item3} alt="playstation 5" />
-                    <p>2.0200,00</p>
+                    <div><p>2.0200,00</p></div>
                     <br/>
                     por: <button className='btn'><h3>1.899,99</h3></button>
                 </div>
@@ -52,8 +53,11 @@ function home(){
                     por: <button className='btn'><h3>1.899,99</h3></button>
                 </div>
            </div>
-
+           <div className='rowCarousel'>
+            <Carrosel2/>
+           </div>
         </div>
+        
     )
 }
 
