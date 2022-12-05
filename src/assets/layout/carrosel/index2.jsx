@@ -6,7 +6,8 @@ import Img4 from '../../img/anuncio4.jpg'
 //import help
 import React from 'react';
 import { Carousel } from 'antd';
-//const CSS
+//const/import CSS
+import "./styles2.css"
 const contentStyle = {
   height: '400px',
   color: '#fff',
