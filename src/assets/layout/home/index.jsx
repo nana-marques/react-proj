@@ -3,6 +3,7 @@ import './style.css'
 //import component
 import Carrosel from '../carrosel/index2'
 import Carrosel2 from '../carrosel/index3'
+import Card from '../card/'
 //import imgs
 import Item1 from '../../img/xbox.jpg'
 import Item2 from '../../img/xboxX.jpg'
@@ -24,12 +25,14 @@ function home(){
                 <div className='anuncio'><h1>Somente <span>HOJE!</span></h1></div>
            </div>
            <div className='rowItem'>
-                <div className='card'>
-                    <h2>Xbox Series S</h2>
+                
+                <Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/>
+                {/* <div className='card'>
                     <img src={Item1} alt="xbox series S" />
-                    <p>2.0200,00</p>
-                    <br/>
-                    por: <button className='btn'><h3>1.899,99</h3></button>
+                    <div className='price'></div>
+                    <div className='button'></div>
+                    <div className='msgItem'></div>
+                    <div className=''></div>
                 </div>
                 <div className='card'>
                 <h2>Xbox Series X</h2>
@@ -51,7 +54,8 @@ function home(){
                     <p>2.0200,00</p>
                     <br/>
                     por: <button className='btn'><h3>1.899,99</h3></button>
-                </div>
+                </div> */}
+
            </div>
            <div className='rowCarousel'>
             <Carrosel2/>

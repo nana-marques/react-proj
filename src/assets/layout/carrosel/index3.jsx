@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import Img1 from '../../img/xbox.jpg'
+import Img1 from '../../img/play.jpg'
 import Img2 from '../../img/xboxX.jpg'
 
 const Teste = () => {
@@ -31,7 +31,6 @@ const Teste = () => {
             <div><img src={Img1} alt="" /></div>
             <div><img src={Img2} alt="" /></div>
             <div><img src={Img1} alt="" /></div>
-            <div><img src={Img2} alt="" /></div>
         </Carousel>
     )
 }

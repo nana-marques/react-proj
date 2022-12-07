@@ -1,0 +1,65 @@
+.card img{
+    width: 100%;
+    height: 225px;
+    border-bottom: 1px solid black;
+}
+
+.card{
+    height: auto;
+    width: 225px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.price{
+    width: 100%;
+}
+
+.price span.symbol{
+    font-size: 13px;
+}
+
+.newPrice{
+    font-size:25px;
+    color: #fd384f;
+    font: bolder;
+}
+
+.oldPrice{
+    text-decoration: line-through;
+    color: rgb(82, 82, 82);
+    font-size: 15px;
+    padding-left: 4%;
+}
+
+
+.button{
+    margin-top:5px;
+}
+
+.btn-item{
+    background-color: #fd384f;
+    color: white;
+    padding: 3px;
+    border:none;
+    border-radius: 5px;
+}
+
+.msgItem{
+    margin-top:5px;
+}
+
+.msgItem p{
+    font-size: 12px;
+}
+
+.iconStar{
+    font-size: 10px;
+    color: gray;
+}
+
+.frete{
+    margin-top:10px;
+    color: green;
+}
