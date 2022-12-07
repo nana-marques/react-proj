@@ -22,13 +22,13 @@
 
 .newPrice{
     font-size:25px;
-    color: #fd384f;
+    color: #002855;
     font: bolder;
 }
 
 .oldPrice{
     text-decoration: line-through;
-    color: rgb(82, 82, 82);
+    color: rgb(255, 107, 107);
     font-size: 15px;
     padding-left: 4%;
 }
@@ -39,7 +39,7 @@
 }
 
 .btn-item{
-    background-color: #fd384f;
+    background-color: #002855;
     color: white;
     padding: 3px;
     border:none;
