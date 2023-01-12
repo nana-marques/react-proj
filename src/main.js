@@ -1,8 +1,8 @@
 //import components
 import NavBar from './assets/layout/navBar/index'
+import AppRouter from './routes'
 import Home from './assets/layout/home/index'
 import Footer from './assets/layout/footer/index'
-import Carrosel from './assets/layout/carrosel/index2'
 //import css
 import './App.css';
 //import help
@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="main">
     <NavBar/>
+    <AppRouter/>
     <Footer/>
     </div>
   );

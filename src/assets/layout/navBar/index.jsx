@@ -29,6 +29,7 @@ import { IconButton } from '@material-ui/core';
 import Login from '../login'
 import Cart from '../carrinho';
 import Home from '../home'
+import PagXbox from '../AllPagProducts/pagXbox/index'
 
 function navBar(){
     const styleCart = {paddingRight: "50px"}
@@ -62,6 +63,7 @@ function navBar(){
             <Routes>
                 <Route path="/login" element={<Login/>} />
                 <Route path="/carrinho" element={<Cart/>} />
+                <Route path="/PagXbox" element={<PagXbox/>} />
                 <Route path="/" element={<Home/>} />
             </Routes>
         </Router>

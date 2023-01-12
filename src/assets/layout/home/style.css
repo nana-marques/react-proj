@@ -48,15 +48,7 @@
     animation: anuncio linear 2s;
 }
 
-@keyframes anuncio{
-    from{
-        font-size: 0px;
-    }
 
-    to{
-        font-size: 32px;
-    }
-}
 
 
 .rowCarousel{
