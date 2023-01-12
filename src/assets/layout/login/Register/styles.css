@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -182,7 +182,7 @@ body, html {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  /* margin-left: 780px; */
+  margin-left: 780px;
 }
 
 .txt1 {
@@ -198,4 +198,4 @@ body, html {
   color: #6a7dfe;
   line-height: 1.5;
   text-decoration: none;
-}
+} */

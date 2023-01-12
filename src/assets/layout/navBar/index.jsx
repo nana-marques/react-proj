@@ -31,7 +31,7 @@ import Cart from '../carrinho';
 import Home from '../home'
 import PagXbox from '../AllPagProducts/pagXbox/index'
 
-function NavBar(){
+function navBar(){
     const styleCart = {paddingRight: "50px"}
     return (
             <div className={Styles.navBar}>
@@ -58,8 +58,8 @@ function NavBar(){
                         </Link>
                     </span>
                 </div>
-            </div>        
+            </div>
     )
 }
 
-export default NavBar;
+export default navBar;
