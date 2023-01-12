@@ -31,10 +31,9 @@ import Cart from '../carrinho';
 import Home from '../home'
 import PagXbox from '../AllPagProducts/pagXbox/index'
 
-function navBar(){
+function NavBar(){
     const styleCart = {paddingRight: "50px"}
     return (
-        <Router>
             <div className={Styles.navBar}>
             <Link to="/"><a href=""><img src={Logo} alt="Logo RadTek" className={Styles.navLogo}/></a></Link>
 
@@ -59,15 +58,8 @@ function navBar(){
                         </Link>
                     </span>
                 </div>
-            </div>
-            <Routes>
-                <Route path="/login" element={<Login/>} />
-                <Route path="/carrinho" element={<Cart/>} />
-                <Route path="/PagXbox" element={<PagXbox/>} />
-                <Route path="/" element={<Home/>} />
-            </Routes>
-        </Router>
+            </div>        
     )
 }
 
-export default navBar;
+export default NavBar;

@@ -13,6 +13,8 @@ import Item4 from '../../img/play4.jpg'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import PagXbox from '../AllPagProducts/pagXbox/index'
 // import Login from '../login/index'
+import NavBar from '../navBar';
+
 
 
 function home(){
@@ -23,6 +25,7 @@ function home(){
     
      return (
         <div>
+            <NavBar/>
            <Carrosel/>
            <div className='mainContainer'>
                 <span>Lançamento</span>
