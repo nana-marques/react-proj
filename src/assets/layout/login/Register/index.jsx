@@ -5,7 +5,7 @@ import './styles.css';
 
 
 
-export const Register = () => {
+const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("")
@@ -61,3 +61,5 @@ export const Register = () => {
       </form>
   )
 }
+
+export default Register;
