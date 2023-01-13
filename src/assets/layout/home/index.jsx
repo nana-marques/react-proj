@@ -32,7 +32,7 @@ function home(){
                 <span>Mais vendidos</span>
            </div>
            <div className='rowItem'>
-                <Link style={{ textDecoration:'none' }} to="/PagXbox"><Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/></Link>
+                <Link style={{ textDecoration:'none', color:'black' }} to="/PagXbox"><Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/></Link>
                 <Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/>
                 <Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/>
                 <Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/>
