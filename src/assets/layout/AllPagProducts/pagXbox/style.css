@@ -1,0 +1,41 @@
+#cardItemFull{
+    margin: 0 auto;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cardItemInfo{
+    width: 30%;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+}
+
+#cardItem{
+    background-color: white;
+    width: 60%;
+    border-radius: 0 10px 10px 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+#cardItem img{
+    height: 370px;
+}
+
+#infoItem{
+    background-color: aqua;
+    height: 100%;
+    padding: 5px;
+    color: black;
+    width: 100%;
+    
+}
+
+#infoItem h3{
+    color: black;
+    text-align: center;
+}
+

@@ -13,19 +13,12 @@ import Item4 from '../../img/play4.jpg'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import PagXbox from '../AllPagProducts/pagXbox/index'
 // import Login from '../login/index'
-import NavBar from '../navBar';
-
 
 
 function home(){
-     
-     <Routes>
-          <Route path="/PagXbox" element={<PagXbox/>} />
-      </Routes>
     
      return (
         <div>
-            <NavBar/>
            <Carrosel/>
            <div className='mainContainer'>
                 <span>Lançamento</span>
@@ -35,7 +28,7 @@ function home(){
                 <span>Mais vendidos</span>
            </div>
            <div className='rowItem'>
-                <Link style={{ textDecoration:'none' }} to="/PagXbox"><Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/></Link>
+                <Link style={{ textDecoration:'none', color:'black' }} to="/PagXbox"><Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/></Link>
                 <Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/>
                 <Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/>
                 <Card price="46,75" oldPrice="89,55" txtButton="Preço Novo Usuário" frete="Frete grátis"/>

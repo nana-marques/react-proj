@@ -1,31 +1,21 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+//Import ROUTER
+import { Routes, Route } from "react-router-dom";
 
-import { Login } from '../assets/layout/login/index';
-import Register from '../assets/layout/login/Register/index'
-import PagXbox  from '../assets/layout/AllPagProducts/pagXbox/index';
-import Cart from '../assets/layout/carrinho/index';
-import Home from '../assets/layout/home/index';
-import NavBar from '../assets/layout/navBar/index';
-import Footer from '../assets/layout/footer/index';
-
+//import Layout
+import { Login } from '../assets/layout/login/index'
+import PagXbox  from '../assets/layout/AllPagProducts/pagXbox/index'
+import Home from '../assets/layout/home/'
+import Cart from '../assets/layout/carrinho'
 
 
 export default function AppRouter() {
     return (
-        <Router>
             <Routes>
+                <Route path="/PagXbox" element={<PagXbox />} />
                 <Route path="/login" element={<Login/>} />
-                <Route path="/register" element={<Register />} />
                 <Route path="/carrinho" element={<Cart/>} />
                 <Route path="/PagXbox" element={<PagXbox/>} />
-                <Route path="/home" element={<Home/>} />  
+                <Route exact path="/" element={<Home/>} />
             </Routes>
-
-
-            {/* <NavBar/>
-            <Home/>
-            <Footer/> */}
-            
-        </Router>
     )
 }

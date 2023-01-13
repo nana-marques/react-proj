@@ -6,15 +6,20 @@ import Footer from './assets/layout/footer/index'
 //import css
 import './App.css';
 //import help
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
+//import ROUTER
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 // MAIN
 function App() {
   return (
     <div className="main">
-      <AppRouter/>      
+    <Router>
+      <NavBar/>
+      <AppRouter/>
+      <Footer/>
+    </Router>
     </div>
   );
 }
