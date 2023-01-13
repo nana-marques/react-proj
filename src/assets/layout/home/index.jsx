@@ -16,10 +16,6 @@ import PagXbox from '../AllPagProducts/pagXbox/index'
 
 
 function home(){
-     
-     <Routes>
-          <Route path="/PagXbox" element={<PagXbox/>} />
-      </Routes>
     
      return (
         <div>

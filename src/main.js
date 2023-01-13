@@ -7,13 +7,19 @@ import Footer from './assets/layout/footer/index'
 import './App.css';
 //import help
 
+//import ROUTER
+import { BrowserRouter as Router } from 'react-router-dom';
+
+
 // MAIN
 function App() {
   return (
     <div className="main">
-    <NavBar/>
-    <AppRouter/>
-    <Footer/>
+    <Router>
+      <NavBar/>
+      <AppRouter/>
+      <Footer/>
+    </Router>
     </div>
   );
 }

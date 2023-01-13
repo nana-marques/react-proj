@@ -34,9 +34,9 @@ import PagXbox from '../AllPagProducts/pagXbox/index'
 function navBar(){
     const styleCart = {paddingRight: "50px"}
     return (
-        <Router>
+        // <Router>
             <div className={Styles.navBar}>
-            <Link to="/"><a href=""><img src={Logo} alt="Logo RadTek" className={Styles.navLogo}/></a></Link>
+            <Link to="/"><img src={Logo} alt="Logo RadTek" className={Styles.navLogo}/></Link>
 
                 {/* <div className={Styles.searchContainer}>
                     <form action="" className={Styles.search}>
@@ -48,7 +48,7 @@ function navBar(){
                 <SearchBar />
 
                 <div className={Styles.navLink}>
-                    <span><Link to="" style={{textDecoration: 'none'}}  className={Styles.navItem}>Home</Link></span>
+                    <span><Link to="/" style={{textDecoration: 'none'}}  className={Styles.navItem}>Home</Link></span>
                     <span><Link to="/login" style={{textDecoration: 'none'}}  className={Styles.navItem}>Login</Link></span>
                     <span><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}>
                             <IconButton size="small" aria-label="show 4 new mails" color="inherit">
@@ -60,13 +60,8 @@ function navBar(){
                     </span>
                 </div>
             </div>
-            <Routes>
-                <Route path="/login" element={<Login/>} />
-                <Route path="/carrinho" element={<Cart/>} />
-                <Route path="/PagXbox" element={<PagXbox/>} />
-                <Route path="/" element={<Home/>} />
-            </Routes>
-        </Router>
+
+        
     )
 }
 
