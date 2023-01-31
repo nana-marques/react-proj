@@ -19,6 +19,28 @@ app.get("/api", async (req, res) => {
 
 });
 
+app.post('/login', async (req,res)=>{
+    console.log(req.body)
+    var query = await User.findAll({
+        where: {
+            email: req.body.email
+          }
+    })
+    if(query.length > 0){
+        if(query[0].dataValues.password == req.body.password){
+            console.log('chegou aqui!')
+            return res.status(200).json({
+                id:query[0].dataValues.id,
+                name:query[0].dataValues.name
+            })
+        }
+    }else{
+        return res.status(420).json(
+            {msg:'email não existe'}
+        )
+    }
+})
+
 
 app.post('/add', async (req, res) => {
     console.log(req.body.email);
