@@ -35,6 +35,10 @@ export const Login = () => {
         if(res.status == 420){
           alert('Email incorreto ou nunca registrado em sistema')
         }
+
+        if(res.status == 421){
+          alert('Senha incorreta')
+        }
       })
     }
 

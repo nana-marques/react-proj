@@ -33,6 +33,10 @@ app.post('/login', async (req,res)=>{
                 id:query[0].dataValues.id,
                 name:query[0].dataValues.name
             })
+        }else{
+            return res.status(421).json(
+                {msg:'senha incorreta'}
+            )
         }
     }else{
         return res.status(420).json(
