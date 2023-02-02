@@ -41,11 +41,12 @@ const Register = () => {
 
   return (
     <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
-      <span className="login-form-title-register"> Criar Conta </span>
+      
 
       <span className="login-form-title">
         <img src={logoFull} alt="Radtek" />
       </span>
+      <span className="login-form-title-register"> Criar Conta </span>
 
       <div className="wrap-input">
         <input id="name"

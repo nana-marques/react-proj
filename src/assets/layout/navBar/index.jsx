@@ -22,9 +22,6 @@ import Logo from '../../img/logo.png'
 import SearchBar from '../search/searchBar';
 import fullSearch from '../search';
 
-// import { Badge } from '@material-ui/core';
-// import { IconButton } from '@material-ui/core';
-
 //import help
 import Login from '../login'
 import Cart from '../carrinho';
@@ -50,12 +47,9 @@ function navBar(){
                 <div className={Styles.navLink}>
                     <span><Link to="/" style={{textDecoration: 'none'}}  className={Styles.navItem}>Home</Link></span>
                     <span><Link to="/login" style={{textDecoration: 'none'}}  className={Styles.navItem}>Login</Link></span>
-                    <span><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}>
-                            {/* <IconButton size="small" aria-label="show 4 new mails" color="inherit"> */}
-                                {/* <Badge badgeContent={20} color="error">
-                                    <FaShoppingCart size="23" values={{paddingRight: '50px', width: '50px', marginTop: '5px'}} alt="Carrinho"/>
-                                </Badge> */}
-                            {/* </IconButton> */}
+                    <span>
+                        <Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}>
+                            <FaShoppingCart size="23" values={{paddingRight: '50px', width: '50px', marginTop: '5px'}} alt="Carrinho"/>
                         </Link>
                     </span>
                 </div>

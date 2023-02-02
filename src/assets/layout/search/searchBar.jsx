@@ -18,7 +18,7 @@ const SearchBar = ({keyword,setKeyword}) => {
 
   return (
     <>
-      <div className={Styles.searchInput}>
+      <form className={Styles.searchInput}>
         <select name="categoria" id="categoria" className={Styles.searchDropdown}>
           {DropdownTreeSelect.map((menu, index) => {
             return (
@@ -35,7 +35,7 @@ const SearchBar = ({keyword,setKeyword}) => {
         placeholder={"Pesquisar"}
         onChange={(e) => setKeyword(e.target.value)} />
         <button type="button" className={Styles.button} aria-label="Search"><FaSearch className={Styles.navSearchButton} /></button>
-      </div>
+      </form>
     </>
   );
 }
