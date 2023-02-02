@@ -14,9 +14,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import PagXbox from '../AllPagProducts/pagXbox/index'
 // import Login from '../login/index'
 
-
-function home(){
-    
+function Home(){
      return (
         <div>
            <Carrosel/>
@@ -42,4 +40,4 @@ function home(){
     )
 }
 
-export default home
+export default Home

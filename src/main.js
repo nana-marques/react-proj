@@ -3,6 +3,7 @@ import NavBar from './assets/layout/navBar/index'
 import AppRouter from './routes'
 import Home from './assets/layout/home/index'
 import Footer from './assets/layout/footer/index'
+import { CookiesProvider } from 'react-cookie';
 //import css
 import './App.css';
 //import help
@@ -16,9 +17,11 @@ function App() {
   return (
     <div className="main">
     <Router>
-      <NavBar/>
-      <AppRouter/>
-      <Footer/>
+      <CookiesProvider>
+        <NavBar/>
+        <AppRouter/>
+        <Footer/>
+      </CookiesProvider>
     </Router>
     </div>
   );

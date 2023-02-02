@@ -4,6 +4,7 @@ import Styles from './index.module.css'
 
 //import help
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 
 //import icons
 import { FaShoppingCart } from 'react-icons/fa';
@@ -28,8 +29,10 @@ import Cart from '../carrinho';
 import Home from '../home'
 import PagXbox from '../AllPagProducts/pagXbox/index'
 
-function navBar(){
+function NavBar(){
     const styleCart = {paddingRight: "50px"}
+    const nameUser = localStorage.getItem('name')
+
     return (
         // <Router>
             <div className={Styles.navBar}>
@@ -46,10 +49,15 @@ function navBar(){
 
                 <div className={Styles.navLink}>
                     <span><Link to="/" style={{textDecoration: 'none'}}  className={Styles.navItem}>Home</Link></span>
-                    <span><Link to="/login" style={{textDecoration: 'none'}}  className={Styles.navItem}>Login</Link></span>
-                    <span>
-                        <Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}>
-                            <FaShoppingCart size="23" values={{paddingRight: '50px', width: '50px', marginTop: '5px'}} alt="Carrinho"/>
+                    {
+                      nameUser  ? <span style={{color:'white'}}>{nameUser}</span> : <span><Link to="/login" style={{textDecoration: 'none'}}  className={Styles.navItem}>Login</Link></span>
+                    }
+                    <span><Link to="/carrinho" style={{ textDecoration: 'none' }}  className={Styles.navItem}>
+                            {/* <IconButton size="small" aria-label="show 4 new mails" color="inherit"> */}
+                                {/* <Badge badgeContent={20} color="error">
+                                    <FaShoppingCart size="23" values={{paddingRight: '50px', width: '50px', marginTop: '5px'}} alt="Carrinho"/>
+                                </Badge> */}
+                            {/* </IconButton> */}
                         </Link>
                     </span>
                 </div>
@@ -59,4 +67,4 @@ function navBar(){
     )
 }
 
-export default navBar;
+export default NavBar;
