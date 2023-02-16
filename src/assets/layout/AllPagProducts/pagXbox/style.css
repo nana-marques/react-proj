@@ -68,6 +68,7 @@ input[type="number"] {
 .cardInfoItem_2{
     display: block;
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .cardInfoItem_2 p,
@@ -133,4 +134,47 @@ input[type="number"] {
 
 .cardInfoItem_2 input{
     width: 95%;
+}
+
+.width {
+    margin-right: none;
+    width: 100%;
+    min-width: 70%;
+}
+
+#cardItemInfoDesc{
+    width: 70%;
+    height: 20em;
+    background-color: #0b4588;
+    display: flex;
+    padding: 15px;
+    margin: 1rem;
+    color: whitesmoke;
+    border-radius: 8px;
+}
+
+#cardItemInfoDescFicha{
+    width: 70%;
+    height: 30em;
+    background-color: #0b4588;
+    display: flex;
+    padding: 15px;
+    margin: 1rem;
+    color: whitesmoke;
+    border-radius: 8px;
+}
+
+.desc{
+    margin: 1em;
+}
+
+.table{
+    width: 100%;
+    margin-right: 1em;
+    border: 1px solid #fff;
+}
+
+td{
+    padding: .5em;
+    margin: 1em;
 }

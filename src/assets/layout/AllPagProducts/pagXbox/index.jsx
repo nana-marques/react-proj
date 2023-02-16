@@ -39,7 +39,7 @@ function PagXbox(){
                         <a>Mais informações de pagamento</a>
                         <hr />
                         <form action="">
-                            <input type="number" maxLength="9" placeholder="Digite o CEP"/>
+                            <input type="number" max="9" placeholder="Digite o CEP"/>
                         </form>
                         <hr />
                     </div>
@@ -47,29 +47,54 @@ function PagXbox(){
                 </div>
 
             </div>
-            <div id="cardItemFull">
-                <div id="cardItemInfo">
-                    <div id='cardInfoItem_1'>
-                        <div id="iconsItem">
-                            <div id="iconFav"><FaRegHeart /> Favoritar</div>
-                            <div id="iconShare"><FaShareAlt /> Compartilhar</div>
-                        </div> <br />
-                        <img src={ImgItem} />
-                    </div>
-
-                    <div className='cardInfoItem_2'>
-                        <h2>Console Xbox Series S 500gb Ssd</h2>
-                        <p>
-                            <FaStar fill='#FFD700'/><FaStar fill='#FFD700'/><FaStar fill='#FFD700'/><FaStar fill='#FFD700'/><FaRegStar fill='#FFD700'/>
-                            (291 avaliações)
+            <div id="cardItemFull" className="width">
+                <div id="cardItemInfoDesc" className="width">
+                    <div id='cardInfoItem_2' className="width">
+                        <h2>Informações do produto</h2>
+                        <p className='desc'>
+                            Xbox Series s, nosso Xbox menor e mais elegante de todos os tempos.
+                            Com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o Xbox Series S oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.
                         </p>
-                        <p>
-                            <FaQuestionCircle />(99 perguntas)
+                        <p className='desc'>Experimente uma velocidade e um desempenho de próxima geração com a arquitetura Xbox Velocity alimentada por um ssd personalizado e um software integrado.
                         </p>
-                        <a href='#' className='link'>Mais informações do produto</a>
+                        <p className='desc'>Imagens meramente ilustrativas. Todas as informações divulgadas são de responsabilidade do Fabricante/Fornecedor.
+                        </p>
                     </div>
+                    
                 </div>
             </div>
+            {/* <div id="cardItemFull" className="width">
+                <div id="cardItemInfoDescFicha" className="width">
+                    <div id='cardInfoItem_2'>
+                        <h2>Ficha Técnica</h2>
+                        <p className='desc'>
+                            Xbox Series s, nosso Xbox menor e mais elegante de todos os tempos.
+                            Com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o Xbox Series S oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.
+                        </p>
+                        <table className='table'>
+                            <tbody>
+                                <tr className='content1'>
+                                    <td>Código</td>
+                                    <td>2117190549</td>
+                                </tr>
+                                <tr className='content2'>
+                                    <td>Código</td>
+                                    <td>2117190549</td>
+                                </tr>
+                                <tr className='content1'>
+                                    <td>Código</td>
+                                    <td>2117190549</td>
+                                </tr>
+                                <tr className='content2'>
+                                    <td>Código</td>
+                                    <td>2117190549</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div> */}
         </>
     )
 }
